@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GlowCare - Complete Skin Care Guide</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background: linear-gradient(to right, #ffe0ec, #fff5f7);
+}
+
+.navbar {
+    background-color: #ff4d6d;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.footer {
+    background-color: #ff4d6d;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand fw-bold">GlowCare</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link active">Home</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Skin Types</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item">Oily</a></li>
+<li><a class="dropdown-item">Dry</a></li>
+<li><a class="dropdown-item">Combination</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link">Routine</a></li>
+<li class="nav-item"><a class="nav-link">Contact</a></li>
+</ul>
+
+<form class="d-flex ms-3">
+<input class="form-control me-2" placeholder="Search">
+<button class="btn btn-light">Search</button>
+</form>
+
+</div>
+</div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+<h1>✨ Complete Skin Care Guide ✨</h1>
+<p>Learn how to take care of your skin step by step</p>
+<button class="btn btn-danger">Get Started</button>
+</div>
+
+<!-- Cards + Collapse -->
+<div class="container my-5">
+<h2 class="text-center">Basic Steps</h2>
+
+<div class="row mt-4">
+
+<div class="col-md-4">
+<div class="card p-3 shadow text-center">
+<h5>🧼 Cleansing</h5>
+<button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#c1">Learn</button>
+<div id="c1" class="collapse mt-2">
+<p>Removes dirt and oil. Clean your face twice daily.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3 shadow text-center">
+<h5>💧 Moisturizing</h5>
+<button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#c2">Learn</button>
+<div id="c2" class="collapse mt-2">
+<p>Keeps skin hydrated and smooth.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3 shadow text-center">
+<h5>☀️ Sunscreen</h5>
+<button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#c3">Learn</button>
+<div id="c3" class="collapse mt-2">
+<p>Protects from UV rays and prevents damage.</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Accordion -->
+<div class="container my-5">
+<h2 class="text-center">Detailed Information</h2>
+
+<div class="accordion" id="acc">
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#a1">
+What is Skin Care?
+</button>
+</h2>
+<div id="a1" class="accordion-collapse collapse show">
+<div class="accordion-body">
+Skin care is maintaining healthy skin using proper routine and products.
+</div>
+</div>
+</div>
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a2">
+Why is it important?
+</button>
+</h2>
+<div id="a2" class="accordion-collapse collapse">
+<div class="accordion-body">
+It prevents acne, aging and keeps skin glowing.
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Tabs -->
+<div class="container my-5">
+<h2 class="text-center">Daily Routine</h2>
+
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#morning">Morning</button>
+</li>
+<li class="nav-item">
+<button class="nav-link" data-bs-toggle="tab" data-bs-target="#night">Night</button>
+</li>
+</ul>
+
+<div class="tab-content p-3 border">
+<div class="tab-pane fade show active" id="morning">
+<p>Cleanser + Moisturizer + Sunscreen</p>
+</div>
+<div class="tab-pane fade" id="night">
+<p>Cleanser + Serum + Night Cream</p>
+</div>
+</div>
+</div>
+
+<!-- Progress Bars -->
+<div class="container my-5">
+<h2 class="text-center">Skin Health</h2>
+
+<p>Hydration</p>
+<div class="progress">
+<div class="progress-bar bg-success" style="width:80%">80%</div>
+</div>
+
+<p class="mt-3">Protection</p>
+<div class="progress">
+<div class="progress-bar bg-warning" style="width:70%">70%</div>
+</div>
+
+</div>
+
+<!-- Form -->
+<div class="container my-5 text-center">
+<h2>Subscribe</h2>
+
+<div class="row justify-content-center">
+<div class="col-md-6">
+<input class="form-control my-2" placeholder="Name">
+<input class="form-control my-2" placeholder="Email">
+<button class="btn btn-danger w-100">Submit</button>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+<p>© 2026 GlowCare | Bootstrap Project</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
